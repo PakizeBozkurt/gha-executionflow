@@ -1,5 +1,5 @@
 name: Reusable Demo
-on: 
+on: [push, workflow_dispatch]
   workflow-call:
     inputs:
       artifact-name:
