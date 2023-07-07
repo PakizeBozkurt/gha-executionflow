@@ -16,7 +16,8 @@ on:
         # required: true
 jobs:
   deploy:
-    outcome: ${{ steps.set-result.outputs.step-result}}
+    outputs:
+      outcome: ${{ steps.set-result.outputs.step-result}}
     runs-on: ubuntu-latest
     steps:
       - name: Get Code
