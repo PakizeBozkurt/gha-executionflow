@@ -90,3 +90,5 @@ jobs:
 
 #Test: This job also runs on the latest version of Ubuntu. It retrieves the code, caches dependencies (unless already cached), installs dependencies, and runs tests. If the tests fail, it uploads the test report as an artifact.
 
+#Build: This job depends on the completion of the Test job. It retrieves the code, caches dependencies (unless already cached), installs dependencies, and builds the website. The built files are then uploaded as artifacts.
+
