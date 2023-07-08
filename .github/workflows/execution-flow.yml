@@ -92,3 +92,5 @@ jobs:
 
 #Build: This job depends on the completion of the Test job. It retrieves the code, caches dependencies (unless already cached), installs dependencies, and builds the website. The built files are then uploaded as artifacts.
 
+#Deploy: This job depends on the completion of the Build job. It downloads the artifacts (built files) from the previous job, outputs their contents, and then performs the deployment. In the given code, it simply outputs the message "Deploying...".
+
