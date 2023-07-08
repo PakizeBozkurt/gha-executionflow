@@ -94,3 +94,4 @@ jobs:
 
 #Deploy: This job depends on the completion of the Build job. It downloads the artifacts (built files) from the previous job, outputs their contents, and then performs the deployment. In the given code, it simply outputs the message "Deploying...".
 
+#Report: This job depends on the completion of both the Lint and Deploy jobs. It runs only if any of the previous jobs failed. It outputs a message indicating that something went wrong and provides information about the GitHub context.
